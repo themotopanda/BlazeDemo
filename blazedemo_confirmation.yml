@@ -1,0 +1,69 @@
+execution:
+- executor: jmeter
+  scenario: BlazeDemo_confirmation
+  ramp-up: 5m
+  hold-for: 10m
+  concurrency:
+    local: 2
+    cloud: 500
+  locations:
+    us-west-1: 1
+
+scenarios:
+  BlazeDemo_confirmation:
+    data-sources:
+    - delimiter: ","
+      # loop: false
+      path: /Users/chefe02/Documents/Demo/blazedemo/blazedemoports.csv
+      quoted: false
+      variable-names: fromPort,toPort
+    requests:
+    - url: http://www.blazedemo.com
+      label: home
+      method: GET
+    - url: http://www.blazedemo.com/reserve.php
+      label: reserve
+      method: POST
+      body:
+        fromPort: ${fromPort}
+        toPort: ${toPort}
+    - url: http://www.blazedemo.com/purchase.php
+      label: purchase
+      method: POST
+      body:
+        airline: Virgin America
+        flight: "12"
+        fromPort: ${fromPort}
+        toPort: ${toPort}
+    - url: http://www.blazedemo.com/confirmation.php
+      label: confirmation
+      method: POST
+      body:
+        address: 123 tall ship st.
+        cardType: visa
+        city: pirate cove
+        creditCardMonth: 11
+        creditCardNumber: 1234123412341234
+        creditCardYear: 2018
+        inputName: captain herp a derp
+        nameOnCard: captain herp a derp
+        state: CA
+        zipCode: 95050
+      assert:
+      - Thank you for your purchase today!
+      subject: body
+        # subject: body
+        # header:
+        #   Content-Type: application/json
+
+modules:
+  passfail:
+    criteria:
+    - TooSlow: avg-rt>300ms, continue as failed
+    - Sucked: failures>=5%, continue as failed
+  blazemeter:
+    # report-name: hello world!
+    test: BlazeDemo from Taurus
+    project: BlazeDemo
+  jmeter:
+    gui: true
