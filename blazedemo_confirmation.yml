@@ -4,7 +4,7 @@ execution:
   ramp-up: 5m
   hold-for: 10m
   concurrency:
-    local: 2
+    local: 1
     cloud: 500
   locations:
     us-west-1: 1
