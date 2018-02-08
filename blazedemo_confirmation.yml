@@ -65,8 +65,8 @@ modules:
     # report-name: hello world!
     test: BlazeDemo from Taurus
     project: BlazeDemo
-  jmeter:
-    gui: true
+  # jmeter:
+  #   gui: true
 reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
