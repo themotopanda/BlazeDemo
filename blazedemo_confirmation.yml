@@ -67,3 +67,6 @@ modules:
     project: BlazeDemo
   jmeter:
     gui: true
+reporting:
+- module: final-stats
+  dump-xml: ./final_stats.xml
