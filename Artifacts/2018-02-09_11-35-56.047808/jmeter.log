@@ -1,0 +1,52 @@
+2018-02-09 11:36:02,647 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2018-02-09 11:36:02,657 INFO o.a.j.JMeter: Loading user properties from: /Users/chefe02/.bzt/jmeter-taurus/3.3/bin/user.properties
+2018-02-09 11:36:02,658 INFO o.a.j.JMeter: Loading system properties from: /Users/chefe02/.bzt/jmeter-taurus/3.3/bin/system.properties
+2018-02-09 11:36:02,658 INFO o.a.j.JMeter: Setting System properties from file: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808/system.properties
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: Version 3.3 r1808647
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: java.version=1.8.0_151
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: os.name=Mac OS X
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: os.arch=x86_64
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: os.version=10.12.6
+2018-02-09 11:36:02,662 INFO o.a.j.JMeter: file.encoding=UTF-8
+2018-02-09 11:36:02,663 INFO o.a.j.JMeter: Max memory     =3817865216
+2018-02-09 11:36:02,663 INFO o.a.j.JMeter: Available Processors =8
+2018-02-09 11:36:02,666 INFO o.a.j.JMeter: Default Locale=English (United States)
+2018-02-09 11:36:02,666 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2018-02-09 11:36:02,666 INFO o.a.j.JMeter: JMeterHome=/Users/chefe02/.bzt/jmeter-taurus/3.3
+2018-02-09 11:36:02,666 INFO o.a.j.JMeter: user.dir  =/Users/chefe02/Documents/Demo/GIT/BlazeDemo
+2018-02-09 11:36:02,666 INFO o.a.j.JMeter: PWD       =/Users/chefe02/Documents/Demo/GIT/BlazeDemo
+2018-02-09 11:36:02,667 INFO o.a.j.JMeter: IP: 10.137.178.138 Name: chefe02mac947 FullName: chefe02mac947.ca.com
+2018-02-09 11:36:02,668 INFO o.a.j.JMeter: user.classpath=/Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808:/Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808
+2018-02-09 11:36:02,668 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808
+2018-02-09 11:36:02,668 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808
+2018-02-09 11:36:02,671 INFO o.a.j.s.FileServer: Default base='/Users/chefe02/Documents/Demo/GIT/BlazeDemo'
+2018-02-09 11:36:02,671 INFO o.a.j.s.FileServer: Set new base='/Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808'
+2018-02-09 11:36:02,787 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-02-09 11:36:02,801 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2018-02-09 11:36:02,805 INFO o.a.j.s.SaveService: Using SaveService properties version 3.2
+2018-02-09 11:36:02,810 INFO o.a.j.s.SaveService: Loading file: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-02-09_11-35-56.047808/modified_requests.jmx
+2018-02-09 11:36:02,882 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2018-02-09 11:36:02,884 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-02-09 11:36:02,899 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-02-09 11:36:02,899 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-02-09 11:36:02,899 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-02-09 11:36:02,900 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-02-09 11:36:02,900 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2018-02-09 11:36:02,900 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2018-02-09 11:36:02,926 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2018-02-09 11:36:02,926 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-02-09 11:36:02,926 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-02-09 11:36:02,929 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2018-02-09 11:36:02,929 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2018-02-09 11:36:03,314 INFO o.a.j.JMeter: Running test (1518204963314)
+2018-02-09 11:36:03,357 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : BlazeDemo_confirmation
+2018-02-09 11:36:03,357 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group BlazeDemo_confirmation.
+2018-02-09 11:36:03,358 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-02-09 11:36:03,361 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2018-02-09 11:36:03,361 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2018-02-09 11:38:18,672 INFO o.a.j.JMeter: Command: Shutdown received from /127.0.0.1
+2018-02-09 11:38:18,673 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2018-02-09 11:38:18,702 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2018-02-09 11:38:18,703 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

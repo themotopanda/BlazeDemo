@@ -52,6 +52,9 @@ scenarios:
       assert:
       - Thank you for your purchase today!
       subject: body
+        # subject: body
+        # header:
+        #   Content-Type: application/json
 
 modules:
   passfail:
@@ -67,5 +70,6 @@ modules:
 reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
+
 settings:
   artifacts-dir: ./Artifacts/%Y-%m-%d_%H-%M-%S.%f

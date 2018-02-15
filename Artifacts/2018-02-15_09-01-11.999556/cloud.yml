@@ -1,0 +1,114 @@
+---
+execution:
+- concurrency: 500
+  executor: jmeter
+  hold-for: 10m
+  locations:
+    us-west-1: 1
+  ramp-up: 5m
+  scenario: BlazeDemo_confirmation
+local-bzt-version: 1.10.3
+modules:
+  gatling:
+    properties:
+      gatling.data.file.bufferSize: 256
+  grinder:
+    properties:
+      grinder.useConsole: false
+  jmeter:
+    properties:
+      jmeter.save.saveservice.autoflush: 'true'
+      jmeter.save.saveservice.connect_time: 'true'
+      jmeterengine.force.system.exit: 'true'
+      summariser.name: ''
+scenarios:
+  BlazeDemo_confirmation:
+    data-sources:
+    - delimiter: ','
+      path: blazedemoports.csv
+      quoted: false
+      variable-names: fromPort,toPort
+    requests:
+    - body: null
+      body-file: null
+      content-encoding: null
+      follow-redirects: null
+      headers: {}
+      keepalive: null
+      label: home
+      method: GET
+      think-time: null
+      timeout: null
+      upload-files: []
+      url: http://www.blazedemo.com
+    - body:
+        fromPort: ${fromPort}
+        toPort: ${toPort}
+      body-file: null
+      content-encoding: null
+      follow-redirects: null
+      headers: {}
+      keepalive: null
+      label: reserve
+      method: POST
+      think-time: null
+      timeout: null
+      upload-files: []
+      url: http://www.blazedemo.com/reserve.php
+    - body:
+        airline: Virgin America
+        flight: '12'
+        fromPort: ${fromPort}
+        toPort: ${toPort}
+      body-file: null
+      content-encoding: null
+      follow-redirects: null
+      headers: {}
+      keepalive: null
+      label: purchase
+      method: POST
+      think-time: null
+      timeout: null
+      upload-files: []
+      url: http://www.blazedemo.com/purchase.php
+    - assert:
+      - Thank you for your purchase today!
+      body:
+        address: 123 tall ship st.
+        cardType: visa
+        city: pirate cove
+        creditCardMonth: 11
+        creditCardNumber: 1234123412341234
+        creditCardYear: 2018
+        inputName: captain herp a derp
+        nameOnCard: captain herp a derp
+        state: CA
+        zipCode: 95050
+      body-file: null
+      content-encoding: null
+      follow-redirects: null
+      headers: {}
+      keepalive: null
+      label: confirmation
+      method: POST
+      subject: body
+      think-time: null
+      timeout: null
+      upload-files: []
+      url: http://www.blazedemo.com/confirmation.php
+    script: null
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+    - conn-all
+  module: monitoring
+  run-at: local
+
