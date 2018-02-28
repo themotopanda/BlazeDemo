@@ -68,5 +68,5 @@ reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
 settings:
-  # artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%f
-  artifacts-dir: ./Artifacts/%Y-%m-%d_%H-%M-%S.%f
+  artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%f
+  # artifacts-dir: ./Artifacts/%Y-%m-%d_%H-%M-%S.%f
