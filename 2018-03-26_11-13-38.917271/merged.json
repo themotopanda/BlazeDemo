@@ -1,0 +1,25 @@
+{
+ "execution": [
+  {
+   "scenario": "BlazeDemo_confirmation", 
+   "ramp-up": "5m", 
+   "locations": {
+    "us-west-1": 1
+   }, 
+   "concurrency": {
+    "local": 20, 
+    "cloud": 500
+   }, 
+   "executor": "jmeter", 
+   "hold-for": "10m"
+  }
+ ], 
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }
+ }, 
+ "scenario": {
+  "script": "./blazedemo_1.jmx"
+ }
+}

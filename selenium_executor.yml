@@ -1,0 +1,16 @@
+execution:
+- executor: selenium
+  # iterations: 1
+  ramp-up: 10s
+  hold-for: 50s
+  concurrency:
+    local: 1
+    cloud: 2
+  locations:
+    us-west-1: 1
+
+  scenario: 
+    script: blazedemo_UT.py
+
+settings:
+  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

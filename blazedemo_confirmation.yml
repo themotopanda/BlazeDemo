@@ -44,7 +44,7 @@ scenarios:
         city: pirate cove
         creditCardMonth: 11
         creditCardNumber: 1234123412341234
-        creditCardYear: 2018
+        creditCardYear: 2020
         inputName: captain herp a derp
         nameOnCard: captain herp a derp
         state: CA
@@ -68,5 +68,4 @@ reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
 settings:
-  artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%f
-  # artifacts-dir: ./Artifacts/%Y-%m-%d_%H-%M-%S.%f
+  artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%fbz

@@ -1,0 +1,13 @@
+execution:
+- executor: jmeter
+  scenario: BlazeDemo_confirmation
+  ramp-up: 5m
+  hold-for: 10m
+  concurrency:
+    local: 20
+    cloud: 500
+  locations:
+    us-west-1: 1
+
+scenario:
+	script: ./blazedemo_1.jmx
