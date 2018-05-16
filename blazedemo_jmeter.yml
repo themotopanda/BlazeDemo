@@ -11,6 +11,12 @@ execution:
   scenario:
     script: ./blazedemo_1.jmx
 
+modules:
+  blazemeter:
+  blazemeter:
+    test: BlazeDemo Jenkins/Taurus
+    project: BlazeDemo
+    
 reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
