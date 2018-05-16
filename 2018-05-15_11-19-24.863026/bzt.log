@@ -1,0 +1,250 @@
+[2018-05-15 11:19:24,779 INFO root] Taurus CLI Tool v1.11.0
+[2018-05-15 11:19:24,779 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/5f/vzk4zj_95sndkt7khp6l85jhnvgy8l/T/bzt_EpKfx8.log', 'option': None, 'aliases': ['locations']}
+[2018-05-15 11:19:24,779 DEBUG root] Python: CPython 2.7.10
+[2018-05-15 11:19:24,779 DEBUG root] OS: ('Darwin', 'chefe02mac947', '17.5.0', 'Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-05-15 11:19:24,779 INFO root] Starting with configs: []
+[2018-05-15 11:19:24,779 DEBUG root] Using personal config: /Users/chefe02/.bzt-rc
+[2018-05-15 11:19:24,779 INFO Engine] Configuring...
+[2018-05-15 11:19:24,780 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.11.0/libexec/etc/bzt.d
+[2018-05-15 11:19:24,780 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-05-15 11:19:24,780 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-05-15 11:19:24,812 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-05-15 11:19:24,839 DEBUG Engine] User configs list: ['/Users/chefe02/.bzt-rc']
+[2018-05-15 11:19:24,839 DEBUG Engine.Configuration] Configs: ['/Users/chefe02/.bzt-rc']
+[2018-05-15 11:19:24,843 DEBUG Engine.Configuration] Reading /Users/chefe02/.bzt-rc as YAML
+[2018-05-15 11:19:24,847 DEBUG Engine.Configuration] Configs: ['/Users/chefe02/.bzt-rc']
+[2018-05-15 11:19:24,848 DEBUG Engine.Configuration] Reading /Users/chefe02/.bzt-rc as YAML
+[2018-05-15 11:19:24,859 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.11.0&installID=macos-de0080e8b101
+[2018-05-15 11:19:24,863 INFO Engine] Artifacts dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026
+[2018-05-15 11:19:24,863 DEBUG Engine] New artifact filename: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/effective
+[2018-05-15 11:19:24,864 DEBUG Engine.Configuration] Dumping YAML config into /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/effective.yml
+[2018-05-15 11:19:24,882 DEBUG Engine.Configuration] Dumping JSON config into /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/effective.json
+[2018-05-15 11:19:24,882 DEBUG Engine] New artifact filename: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/merged.yml
+[2018-05-15 11:19:24,883 DEBUG Engine.Configuration] Dumping YAML config into /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/merged.yml
+[2018-05-15 11:19:24,883 DEBUG Engine] New artifact filename: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/merged.json
+[2018-05-15 11:19:24,884 DEBUG Engine.Configuration] Dumping JSON config into /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/merged.json
+[2018-05-15 11:19:24,884 DEBUG root] Closing log handler: /var/folders/5f/vzk4zj_95sndkt7khp6l85jhnvgy8l/T/bzt_EpKfx8.log
+[2018-05-15 11:19:24,889 DEBUG root] Switched writing logs to /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/bzt.log
+[2018-05-15 11:19:24,889 DEBUG root] Linting config
+[2018-05-15 11:19:24,891 INFO Engine] Preparing...
+[2018-05-15 11:19:24,891 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-05-15 11:19:24,891 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-05-15 11:19:26,320 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-05-15 11:19:26,321 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-05-15 11:19:26,321 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2018-05-15 11:19:26,321 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-05-15 11:19:26,332 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-05-15 11:19:26,332 DEBUG Engine.monitoring] Should not run because of non-matching prov: cloud != local
+[2018-05-15 11:19:26,332 DEBUG Engine] Module config: cloud defaultdict(None, {'class': 'bzt.modules.blazemeter.CloudProvisioning', 'default-location': 'us-central1-a', 'dump-locations': True})
+[2018-05-15 11:19:26,332 DEBUG root] Importing module: bzt.modules.blazemeter
+[2018-05-15 11:19:27,396 DEBUG easyprocess] version=0.2.3
+[2018-05-15 11:19:27,427 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-05-15 11:19:27,434 DEBUG root] Loading class: 'CloudProvisioning' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2018-05-15 11:19:27,434 DEBUG Engine] Module config: blazemeter defaultdict(None, {'token': '********', 'class': 'bzt.modules.blazemeter.BlazeMeterUploader'})
+[2018-05-15 11:19:27,434 DEBUG root] Importing module: bzt.modules.blazemeter
+[2018-05-15 11:19:27,434 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2018-05-15 11:19:27,434 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2018-05-15 11:19:27,524 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2018-05-15 11:19:27,675 DEBUG Engine] Taurus updates info: {"latest":"1.11.1","needsUpgrade":true}
+[2018-05-15 11:19:27,676 WARNING Engine] There is newer version of Taurus 1.11.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2018-05-15 11:19:28,058 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 1899
+[2018-05-15 11:19:28,059 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 2,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 153221,
+            "name": "BlazeMeter Demo",
+            "thumbnailUrl": "https://www.blazemeter.com/s
+[2018-05-15 11:19:28,061 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=153221&enabled=true&limit=100 None
+[2018-05-15 11:19:28,311 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=153221&enabled=true&limit=100 HTTP/1.1" 200 1510
+[2018-05-15 11:19:28,312 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 2,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 215524,
+            "name": "CD Presales WorkSpace",
+            "userId": 358935,
+            "created
+[2018-05-15 11:19:28,313 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=190324&enabled=true&limit=100 None
+[2018-05-15 11:19:28,526 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=190324&enabled=true&limit=100 HTTP/1.1" 200 2190
+[2018-05-15 11:19:28,527 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 3,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 184063,
+            "name": "demo workspace",
+            "userId": 407077,
+            "created": 1513
+[2018-05-15 11:19:28,529 WARNING Engine.cloud] Dumping available locations instead of running the test
+[2018-05-15 11:19:28,529 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/215524 None
+[2018-05-15 11:19:28,815 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/215524 HTTP/1.1" 200 None
+[2018-05-15 11:19:28,891 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 215524,
+        "name": "CD Presales WorkSpace",
+        "userId": 358935,
+        "created": 1525112667,
+        "updated": 1525724910,
+        "enabled": true,
+        "dedicatedIps
+[2018-05-15 11:19:28,906 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/146738 None
+[2018-05-15 11:19:29,137 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/146738 HTTP/1.1" 200 None
+[2018-05-15 11:19:29,208 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 146738,
+        "name": "Demo workspace",
+        "userId": 368191,
+        "created": 1498856673,
+        "updated": 1526320516,
+        "enabled": true,
+        "dedicatedIpsEnabled
+[2018-05-15 11:19:29,230 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/184063 None
+[2018-05-15 11:19:29,442 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/184063 HTTP/1.1" 200 None
+[2018-05-15 11:19:29,460 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 184063,
+        "name": "demo workspace",
+        "userId": 407077,
+        "created": 1513707945,
+        "updated": 1522438252,
+        "enabled": true,
+        "dedicatedIpsEnabled
+[2018-05-15 11:19:29,479 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/188407 None
+[2018-05-15 11:19:29,753 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/188407 HTTP/1.1" 200 None
+[2018-05-15 11:19:29,767 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 188407,
+        "name": "litterbox",
+        "userId": 407077,
+        "created": 1515721294,
+        "updated": 1522438252,
+        "enabled": true,
+        "dedicatedIpsEnabled": tr
+[2018-05-15 11:19:29,785 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/196906 None
+[2018-05-15 11:19:30,009 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/196906 HTTP/1.1" 200 None
+[2018-05-15 11:19:30,026 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 196906,
+        "name": "private locations",
+        "userId": 407077,
+        "created": 1518563928,
+        "updated": 1518563928,
+        "enabled": true,
+        "dedicatedIpsEnab
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: ap-northeast-1	Asia Pacific (Tokyo)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: ap-northeast-2	Asia Pacific (Seoul)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: ap-south-1	Asia Pacific (Mumbai)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: ap-southeast-1	Asia Pacific (Singapore)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: ap-southeast-2	Australia (Sydney)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: asia-east1-a	Asia East (Taiwan, Google)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: asia-northeast1-a	Asia Northeast (Japan, Google)
+[2018-05-15 11:19:30,046 INFO Engine.cloud] Location: asia-south1-a	Asia South (Mumbai, Google)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: asia-southeast1-a	Asia Southeast (Singapore, Google)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: australia-southeast1-a	Australia (Sydney, Google)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-ap-northeast-1	Azure Korea Central (Seoul)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-ap-northeast-2	Azure Korea South (Busan)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-brazil-south-1	Azure Brazil South (Sao Paulo)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-central-asia-1	Azure Central India (Pune)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-central-asia-2	Azure West India (Mumbai)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-central-asia-3	Azure South India (Chennai)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-central-ca	Azure Canada Central (Toronto)
+[2018-05-15 11:19:30,047 INFO Engine.cloud] Location: azure-central-us-1	Azure US Central (Iowa)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-east-asia-1	Azure East Asia (Hong Kong)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-east-au-1	Azure Australia East (New South Wales)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-east-ca	Azure Canada East (Quebec City)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-east-us-1	Azure US East (Virginia)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-east-us-2	Azure East US 2 (Virginia)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-eu-west-2	Azure UK South (London)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-eu-west-3	Azure UK West (Cardiff)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-japan-east-1	Azure Japan East (Tokyo, Saitama)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-japan-west-1	Azure Japan West (Osaka)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-north-central-us-1	Azure US North Central (Illinois)
+[2018-05-15 11:19:30,048 INFO Engine.cloud] Location: azure-north-europe-1	Azure EU North (Ireland)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-south-central-us-1	Azure US South Central (Texas)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-southeast-asia-1	Azure Southeast Asia (Singapore)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-southeast-au-1	Azure Australia Southeast (Victoria)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-us-west-central	Azure US West Central (US West Central)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-west-europe-1	Azure EU West (Netherlands)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-west-us-1	Azure US West (California)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: azure-west-us-2	Azure US East (US West 2)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: ca-central-1	Canada (Central)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: eu-central-1	EU Central (Frankfurt)
+[2018-05-15 11:19:30,049 INFO Engine.cloud] Location: eu-west-1	EU West (Ireland)
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: eu-west-2	EU West (London)
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: eu-west-3	EU West (Paris) - New
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: europe-west1-b	EU West (Belgium, Google)
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: europe-west2-a	EU West (London, Google)
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: europe-west3-a	EU West (Frankfurt, Google)
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: europe-west4-b	EU West (Netherlands, Google)
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: harbor-5591335d8588531f5cde3a04	Sandbox
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: harbor-58d3b97ff132adc0347b23c6	Functional Testing Default Location
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: harbor-59464ffd67f3bf63cb7b23c9	US East (Ohio) - Functional Test
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: harbor-59465fcde4d6a240d97b23c6	Us West (N. California) - Functional Test
+[2018-05-15 11:19:30,050 INFO Engine.cloud] Location: harbor-594662d6e6e960aedb7b23c7	Us West (Oregon) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5946677fe4d6a21adb7b23c8	Canada (Central) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-59466cb1e4d6a296e37b23c8	EU West (Ireland) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-59466f1b67f3bfebe27b23c7	EU Central (Frankfurt) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5946708a65e00138e57b23c6	EU West (London) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-59467342e4d6a205e67b23c6	Asia Pacific (Singapore) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5946756fe4d6a204e37b23c6	Australia (Sydney) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5946770be6e960e5e57b23cf	Asia Pacific (Seoul) - Functional Test
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5a9db8d3a07b5638387b23c6	private panda!
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5a9dc8f62185b52512f87287	beefy panda!
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: harbor-5aba69d863cb0ef0037b2429	DEMO
+[2018-05-15 11:19:30,051 INFO Engine.cloud] Location: northamerica-northeast1-a	Canada East (Montreal, Google)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: sa-east-1	South America (Sao Paulo)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: southamerica-east1-a	Brazil (Sao Paulo, Google)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-central1-a	US Central (Iowa, Google)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-east-1	US East (Virginia)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-east-2	US East (Ohio)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-east1-b	US East (South Carolina, Google)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-east4-a	US East (Virginia, Google)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-west-1	US West (N.California)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-west-2	US West (Oregon)
+[2018-05-15 11:19:30,052 INFO Engine.cloud] Location: us-west1-a	US West (Oregon, Google)
+[2018-05-15 11:19:30,052 DEBUG root] Shutting down by request from code
+[2018-05-15 11:19:30,053 DEBUG root] NormalShutdown: Done listing locations
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/cli.py", line 249, in perform
+    self.engine.prepare()
+  File "/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/engine.py", line 166, in prepare
+    self.__prepare_provisioning()
+  File "/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/engine.py", line 512, in __prepare_provisioning
+    self.provisioning.prepare()
+  File "/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/modules/blazemeter.py", line 1521, in prepare
+    self.__dump_locations_if_needed()
+  File "/usr/local/Cellar/bzt/1.11.0/libexec/lib/python2.7/site-packages/bzt/modules/blazemeter.py", line 1573, in __dump_locations_if_needed
+    raise NormalShutdown("Done listing locations")
+NormalShutdown: Done listing locations
+[2018-05-15 11:19:30,053 INFO Engine] Post-processing...
+[2018-05-15 11:19:30,053 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2018-05-15 11:19:30,055 DEBUG Engine.Configuration] Dumping YAML config into /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/effective.yml
+[2018-05-15 11:19:30,073 DEBUG Engine.Configuration] Dumping JSON config into /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/effective.json
+[2018-05-15 11:19:30,074 INFO root] Artifacts dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026
+[2018-05-15 11:19:30,074 INFO root] Done performing with code: 0
+[2018-05-15 11:19:30,074 DEBUG root] Closing log handler: /Users/chefe02/Documents/Demo/GIT/BlazeDemo/2018-05-15_11-19-24.863026/bzt.log
