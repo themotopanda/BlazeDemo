@@ -13,7 +13,7 @@ execution:
 
 modules:
   blazemeter:
-  blazemeter:
+    workspace: demo workspace
     test: BlazeDemo Jenkins/Taurus
     project: BlazeDemo
     
