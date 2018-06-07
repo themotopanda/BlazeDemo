@@ -1,0 +1,18 @@
+execution:
+  - concurrency: 400
+    hold-for: 5m
+    ramp-up: 30s
+    scenario: sample
+    locations:
+      us-west-1: 1
+
+scenarios:
+  sample:
+    requests:
+      - url: http://blazedemo.com/  # url to hit
+        label: homepage  # sampler label
+      - url: http://blazedemo.com/reserve.php
+        label: reserve
+
+reporting:
+  - module: blazemeter
