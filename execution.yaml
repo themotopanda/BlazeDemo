@@ -1,5 +1,5 @@
 execution:
-- concurrency: 400
+- concurrency: 500
   hold-for: 1m30s
   ramp-up: 30s
   scenario: sample
