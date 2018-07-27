@@ -1,0 +1,20 @@
+execution:
+- executor: gatling
+  # iterations: 5
+  ramp-up: 1m
+  hold-for: 4m
+  concurrency:
+    local: 100
+    cloud: 500
+  locations:
+    us-west-1: 1
+
+  scenario: 
+    script: BZD.scala
+
+modules:
+  blazemeter:
+    # workspace: litterbox
+    workspace: demo workspace
+    test: BlazeDemo Gatling from Taurus
+    project: BlazeDemo

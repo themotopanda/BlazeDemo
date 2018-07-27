@@ -4,7 +4,7 @@ execution:
   ramp-up: 5m
   hold-for: 10m
   concurrency:
-    local: 20
+    local: 2
     cloud: 500
   locations:
     us-west-1: 1
@@ -44,7 +44,7 @@ scenarios:
         city: pirate cove
         creditCardMonth: 11
         creditCardNumber: 1234123412341234
-        creditCardYear: 2020
+        creditCardYear: 2018
         inputName: captain herp a derp
         nameOnCard: captain herp a derp
         state: CA
@@ -52,6 +52,9 @@ scenarios:
       assert:
       - Thank you for your purchase today!
       subject: body
+        # subject: body
+        # header:
+        #   Content-Type: application/json
 
 modules:
   passfail:
@@ -59,7 +62,7 @@ modules:
     - TooSlow: avg-rt>300ms, continue as failed
     - Sucked: failures>=5%, continue as failed
   blazemeter:
-    # report-name: BlazeDemo from Taurus/Jenkins
+    # report-name: hello world!
     test: BlazeDemo from Taurus
     project: BlazeDemo
   # jmeter:
@@ -67,5 +70,3 @@ modules:
 reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
-settings:
-  artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%fbz

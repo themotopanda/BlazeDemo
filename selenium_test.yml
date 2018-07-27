@@ -1,6 +1,6 @@
 execution:
 - executor: selenium
-  iterations: 1
+  iterations: 5
   # ramp-up: 10s
   # hold-for: 14m50s
   concurrency:
@@ -14,13 +14,9 @@ execution:
 
 modules:
   blazemeter:
-    workspace: demo workspace
+    workspace: litterbox
     test: BlazeDemo SY from Taurus
     project: BlazeDemo
-
-services:
-- capturehar
-- screenshoter
 
 settings:
   artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

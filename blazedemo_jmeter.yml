@@ -14,11 +14,12 @@ execution:
 modules:
   blazemeter:
     workspace: demo workspace
-    test: BlazeDemo Jenkins/Taurus
+    test: BlazeDemo
+    report-name: BZD from Taurus
     project: BlazeDemo
-    
+
 reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
 settings:
-  artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%fbz
+  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

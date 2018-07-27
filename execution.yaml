@@ -1,23 +1,11 @@
 execution:
-- concurrency: 500
-  hold-for: 1m30s
-  ramp-up: 30s
-  scenario: sample
-  locations:
-    us-west-1: 1
+- executor: locust
+  concurrency: 10
+  ramp-up: 1m
+  iterations: 1000
+  scenario: example
 
 scenarios:
-  sample:
-    requests:
-      - url: http://blazedemo.com/  # url to hit
-        label: homepage  # sampler label
-      - url: http://blazedemo.com/reserve.php
-        label: reserve
-
-reporting:
-  - module: blazemeter
-
-modules:
-  blazemeter:
-    test: Jenkins test
-    workspace: litterbox
+  example:
+    default-address: http://blazedemo.com
+    script: blazedemo_LY.py

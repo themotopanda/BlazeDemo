@@ -1,11 +1,22 @@
 execution:
 - executor: locust
-  concurrency: 10
-  ramp-up: 1m
-  iterations: 1000
+  concurrency: 20
+  ramp-up: 10s
+  hold-for: 15m
+  # iterations: 10000
   scenario: example
+  locations:
+    us-west-1: 1
 
 scenarios:
   example:
-    default-address: http://blazedemo.com
-    script: blazedemo_LY.py
+    default-address: http://www.blazedemo.com
+    script: blazedemo_LP.py
+
+modules:
+  blazemeter:
+    test: BlazeDemo Locust/Taurus
+    workspace: litterbox
+
+settings:
+  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

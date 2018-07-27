@@ -1,6 +1,6 @@
 execution:
 - executor: selenium
-  iterations: 1
+  iterations: 5
   # ramp-up: 10s
   # hold-for: 14m50s
   concurrency:
@@ -10,17 +10,13 @@ execution:
     us-west-1: 1
 
   scenario: 
-    script: blazedemo_UTA.py
+    script: BD_UT_learning.py
 
 modules:
   blazemeter:
-    workspace: demo workspace
+    cloud-mode: taurusCloud
     test: BlazeDemo SY from Taurus
     project: BlazeDemo
-
-services:
-- capturehar
-- screenshoter
 
 settings:
   artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

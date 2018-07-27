@@ -2,12 +2,13 @@ execution:
 - executor: jmeter
   scenario: BlazeDemo_confirmation
   ramp-up: 10s
-  hold-for: 50s
+  hold-for: 1m50s
   concurrency:
-    local: 20
+    local: 200
     cloud: 500
   locations:
     us-west-1: 1
+    # us-east-1: 1
 
 scenarios:
   BlazeDemo_confirmation:
@@ -66,6 +67,6 @@ modules:
   #   gui: true
 reporting:
 - module: final-stats
-  dump-xml: ./final_stats.xml
+  dump-xml: /final_stats.xml
 settings:
-  artifacts-dir: /Users/chefe02/Documents/Demo/GIT/BlazeDemoArtifacts/%Y-%m-%d_%H-%M-%S.%fbz
+  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

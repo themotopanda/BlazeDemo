@@ -9,7 +9,7 @@ class BlazeDemoTest(unittest.TestCase):
 		self.driver = webdriver.Chrome()
 		self.driver.get("http://www.blazedemo.com")
 		self.driver.implicitly_wait(3)
-		self.driver.maximize_window()
+		# self.driver.maximize_window()
 
 	def verifyWelcome(self):
 		assert "Welcome" in self.driver.page_source

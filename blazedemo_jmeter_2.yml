@@ -1,26 +1,24 @@
 execution:
-- executor: selenium
-  iterations: 1
-  # ramp-up: 10s
-  # hold-for: 14m50s
+- executor: jmeter
+  ramp-up: 5m
+  hold-for: 10m
   concurrency:
-    local: 1
-    cloud: 2
+    local: 20
+    cloud: 300
   locations:
     us-west-1: 1
 
-  scenario: 
-    script: blazedemo_UTA.py
+  scenario:
+    script: ./blazedemo_1.jmx
 
 modules:
   blazemeter:
     workspace: demo workspace
-    test: BlazeDemo SY from Taurus
+    test: BlazeDemo from Taurus
     project: BlazeDemo
 
-services:
-- capturehar
-- screenshoter
-
+reporting:
+- module: final-stats
+  dump-xml: ./final_stats.xml
 settings:
   artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

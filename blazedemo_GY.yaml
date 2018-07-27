@@ -1,0 +1,40 @@
+execution:
+- executor: gatling
+  # iterations: 1
+  concurrency: 200
+  ramp-up: 2
+  hold-for: 5m
+  scenario: complex_sample
+
+scenarios:
+  complex_sample:
+    default-address: blazedemo.com
+    requests:
+    - url: /
+      label: home
+      # assert:
+      # - subject: body # subject for search (defalut: body)
+      #   regexp: true  # whether expression is regular (default: false)
+      #   not: true     # invert condition (default: false)
+      #   contains: # expression list for assertion (mandatory)
+      #   - .+sometext.+  
+      # body: 'Some Body Data'
+      # follow-redirect: false    #   true by default
+      # headers:
+      #   HEADER_11: VALUE_11
+    - url: /reserve.php
+      label: reserve
+      think-time: 2s
+      # assert:
+      # - contains:
+      #   - 200
+      #   subject: http-code
+      #   not: true
+
+modules:
+  blazemeter:
+    workspace: litterbox
+    test: BZD Gatling
+
+settings:
+  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

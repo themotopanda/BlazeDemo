@@ -1,5 +1,6 @@
 execution:
-- executor: selenium
+- executor: testng
+  scenario: test
   iterations: 1
   # ramp-up: 10s
   # hold-for: 14m50s
@@ -9,18 +10,15 @@ execution:
   locations:
     us-west-1: 1
 
-  scenario: 
-    script: blazedemo_UTA.py
+scenarios:
+  test:
+    script: TestNGExample.java
 
 modules:
   blazemeter:
-    workspace: demo workspace
-    test: BlazeDemo SY from Taurus
+    workspace: litterbox
+    test: BlazeDemo NG from Taurus
     project: BlazeDemo
-
-services:
-- capturehar
-- screenshoter
 
 settings:
   artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz

@@ -1,0 +1,63 @@
+execution:
+- executor: selenium
+  scenario: blazedemo
+  # iterations: 1
+  ramp-up: 10s
+  hold-for: 110s
+  concurrency:
+    local: 1
+    cloud: 2
+  locations:
+    us-east-1: 1
+
+scenarios:
+  blazedemo:
+    browser: Chrome
+    timeout: 10s
+    think-time: 3s
+    default-address requests: http://blazedemo.com
+    requests:
+    - label: home
+      url: http://www.blazedemo.com
+      assert:
+      - contains:
+        - "Welcome to the Simple Travel Agency!"
+    - label: ports
+      actions:
+      - clickByXPath(/html/body/div[3]/form/select[1]/option[6])
+      - clickByXPath(/html/body/div[3]/form/select[2]/option[7])
+      - clickByXPath(/html/body/div[3]/form/div/input)
+      assert:
+      - contains:
+        - "Flights"
+    - label: reserve
+      actions:
+      - clickByXPath(/html/body/div[2]/table/tbody/tr[3]/td[1]/input)
+      assert:
+      - contains:
+        - "reserved"
+    - label: purchase
+      actions:
+      - keysByXPath(//*[@id="inputName"]): captain herp-a-derp
+      - keysByXPath(//*[@id="address"]): 123 tall ship st.
+      - keysByXPath(//*[@id="city"]): pirate cove
+      - keysByXPath(//*[@id="state"]): CA
+      - keysByXPath(//*[@id="zipCode"]): 95050
+      - keysByXPath(//*[@id="creditCardNumber"]): 1234123412341234
+      - keysByXPath(//*[@id="creditCardYear"]): 2020
+      - keysByXPath(//*[@id="nameOnCard"]): captain herp-a-derp
+      - clickByXPath(/html/body/div[2]/form/div[11]/div/input)
+    - label: confirmation
+      assert:
+      - contains:
+        - "Thank you for your purchase today!"
+
+settings:
+  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz
+
+modules:
+  blazemeter:
+    # report-name: 
+    test: BlazeDemo SY from Taurus
+    project: BlazeDemo
+
