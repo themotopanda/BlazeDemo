@@ -21,5 +21,5 @@ modules:
 reporting:
 - module: final-stats
   dump-xml: ./final_stats.xml
-settings:
-  artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz
+# settings:
+#   artifacts-dir: /Users/chefe02/Documents/Demo/blazedemo/Artifacts/%Y-%m-%d_%H-%M-%S.%fbz
