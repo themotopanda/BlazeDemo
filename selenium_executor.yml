@@ -1,13 +1,13 @@
 execution:
 - executor: selenium
-  iterations: 1
-  # ramp-up: 10s
-  # hold-for: 14m50s
+  # iterations: 1
+  ramp-up: 10s
+  hold-for: 14m50s
   concurrency:
     local: 1
     cloud: 2
   locations:
-    us-west-1: 1
+    us-west-2: 1
 
   scenario: 
     script: blazedemo_UTA.py
@@ -15,7 +15,7 @@ execution:
 modules:
   blazemeter:
     workspace: demo workspace
-    test: BlazeDemo SY from Taurus
+    test: BlazeDemo SP from Taurus
     project: BlazeDemo
 
 services:

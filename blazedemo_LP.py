@@ -7,6 +7,8 @@ class UserBehaviour(TaskSet):
     def generated_task(self):
         self.client.get(timeout=30.0, url="http://blazedemo.com")
         self.client.get(timeout=30.0, url="http://blazedemo.com/reserve.php")
+        self.client.get(timeout=30.0, url="http://blazedemo.com/purchase.php")
+        self.client.get(timeout=30.0, url="http://blazedemo.com/confirmation.php")
         
 
 class GeneratedSwarm(HttpLocust):

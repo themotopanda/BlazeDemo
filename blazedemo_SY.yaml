@@ -46,8 +46,9 @@ scenarios:
       - keysByXPath(//*[@id="creditCardNumber"]): 1234123412341234
       - keysByXPath(//*[@id="creditCardYear"]): 2020
       - keysByXPath(//*[@id="nameOnCard"]): captain herp-a-derp
-      - clickByXPath(/html/body/div[2]/form/div[11]/div/input)
     - label: confirmation
+      actions:
+      - clickByXPath(/html/body/div[2]/form/div[11]/div/input)
       assert:
       - contains:
         - "Thank you for your purchase today!"
